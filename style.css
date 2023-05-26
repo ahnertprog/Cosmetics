@@ -347,10 +347,12 @@ footer {
         display: none;
         position: absolute;
         z-index: 99;
-        background-color: rgba(29, 29, 161, 0.9);
+        background-color: rgba(95, 9, 95, 0.9);
         width: 80vw;
         top: 100px;
         right: 0;
+        
+    
     }
     .menu ul {
         flex-direction: column;
@@ -416,7 +418,7 @@ footer {
         display: none;
         position: absolute;
         z-index: 99;
-        background-color: rgba(29, 29, 161, 0.9);
+        background-color: rgba(95, 9, 95, 0.9);
         width: 80vw;
         top: 100px;
         right: 0;
@@ -495,10 +497,10 @@ footer {
     }
     .menu .select:hover {
         border-bottom: solid 3px rgb(253, 35, 35);
-        padding-bottom: 9px;
+        padding-bottom: 0px;
     }
     .menu a:hover {
-        padding: 7px;
+        padding: 2px;
         border-radius: 20px;
         background-color:purple;
         border-bottom: 2.4px solid black;
