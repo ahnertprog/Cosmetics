@@ -29,19 +29,18 @@ body {
     list-style-type: none;
 }
 .menu a {
-    margin-left: 40px;
+    margin-left: 5px;
     text-decoration: none;
     color:black;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .menu .select {
     border-radius: 10px;
-    padding: 4px;
+    border: 2px solid;
     background-color: purple;
 }
 .menu .select:hover {
-    border-bottom: solid 3px rgb(253, 35, 35);
-    padding-bottom: 9px;
+
 }
 .menu a:hover {
     padding: 7px;
@@ -390,16 +389,9 @@ footer {
             padding-bottom: 0px;
         }
         .menu .select:hover {
-            border-bottom: solid 3px rgb(253, 35, 35);
-            padding-bottom: 9px;
         }
         .menu a:hover {
-            padding: 7px;
-            border-radius: 20px;
-            background-color:purple;
-            border-bottom: 2.4px solid black;
-            color: black;
-            text-decoration:dotted;
+          
         }
         .menu {
             display: flex;   
@@ -496,8 +488,6 @@ footer {
         padding-bottom: 9px;
     }
     .menu .select:hover {
-        border-bottom: solid 3px rgb(253, 35, 35);
-        padding-bottom: 0px;
     }
     .menu a:hover {
         padding: 2px;
