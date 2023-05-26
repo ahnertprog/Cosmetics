@@ -17,21 +17,33 @@ body {
     max-width: 1140px;
     margin: auto;
 }
-.menu-top a {
+.menu ul {
+    display: flex;
+}
+.menu-opener {
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+.menu li {
+    list-style-type: none;
+}
+.menu a {
     margin-left: 40px;
     text-decoration: none;
     color:black;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.menu-top .select {
-    border-bottom: solid 3px black;
-    padding-bottom: 9px;
+.menu .select {
+    border-radius: 10px;
+    padding: 4px;
+    background-color: purple;
 }
-.menu-top .select:hover {
+.menu .select:hover {
     border-bottom: solid 3px rgb(253, 35, 35);
     padding-bottom: 9px;
 }
-.menu-top a:hover {
+.menu a:hover {
     padding: 7px;
     border-radius: 20px;
     background-color:purple;
@@ -39,7 +51,7 @@ body {
     color: black;
     text-decoration:dotted;
 }
-.menu-top {
+.menu {
     display: flex;   
     align-items: center;
     text-align: center;
@@ -313,6 +325,11 @@ footer {
     text-align: center;
 }
 @media (min-width:769px) and (max-width:1140px) {
+    .menu-opener {
+        display: block;
+        height: 30px;
+        width: 30px;
+    }
     .container {
         padding-left:20px;
         padding-right: 20px;
@@ -320,6 +337,30 @@ footer {
 
 }
 @media (min-width:426px) and (max-width:768px) {
+    .menu-opener {
+        display: block;
+        height: 30px;
+        width: 30px;
+    
+    }
+    .menu nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(29, 29, 161, 0.9);
+        width: 80vw;
+        top: 100px;
+        right: 0;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li a {
+        font-weight: bold;
+        height: 50px;
+        font-size: 18px;
+        border: none;
+    }
     .container {
         padding-left: 20px;
         padding-right: 20px;
@@ -336,21 +377,21 @@ footer {
             display: grid;
             grid-template-columns: 3fr 2fr;
         }
-        .menu-top a {
+        .menu a {
             margin-left: 40px;
             text-decoration: none;
             color:black;
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-        .menu-top .select {
+        .menu .select {
             border-bottom: solid 3px black;
-            padding-bottom: 9px;
+            padding-bottom: 0px;
         }
-        .menu-top .select:hover {
+        .menu .select:hover {
             border-bottom: solid 3px rgb(253, 35, 35);
             padding-bottom: 9px;
         }
-        .menu-top a:hover {
+        .menu a:hover {
             padding: 7px;
             border-radius: 20px;
             background-color:purple;
@@ -358,7 +399,7 @@ footer {
             color: black;
             text-decoration:dotted;
         }
-        .menu-top {
+        .menu {
             display: flex;   
             align-items: center;
             text-align: center;
@@ -366,6 +407,29 @@ footer {
         }
 }
 @media (max-width:425px) {
+    .menu-opener {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    .menu nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(29, 29, 161, 0.9);
+        width: 80vw;
+        top: 100px;
+        right: 0;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li a {
+        font-weight: bold;
+        height: 50px;
+        font-size: 18px;
+        border: none;
+    }
     .container {
         padding-left: 20px;
         padding-right: 20px;
@@ -419,21 +483,21 @@ footer {
         font-size: 16px;
         padding: 10px;
     }
-    .menu-top a {
+    .menu- a {
         margin-left: 40px;
         text-decoration: none;
         color:black;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    .menu-top .select {
+    .menu .select {
         border-bottom: solid 3px black;
         padding-bottom: 9px;
     }
-    .menu-top .select:hover {
+    .menu .select:hover {
         border-bottom: solid 3px rgb(253, 35, 35);
         padding-bottom: 9px;
     }
-    .menu-top a:hover {
+    .menu a:hover {
         padding: 7px;
         border-radius: 20px;
         background-color:purple;
@@ -441,7 +505,7 @@ footer {
         color: black;
         text-decoration:dotted;
     }
-    .menu-top {
+    .menu {
         display: flex;   
         align-items: center;
         text-align: center;
